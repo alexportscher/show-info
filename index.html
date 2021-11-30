@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="shortcut icon" href="shortcut.ico" type="image/x-icon">
+    <title>Desafio JavaScript</title>
+    <script src="app.js"></script>
+    <style>
+        .nameborder {
+            border-bottom: 2px solid black;
+        }
+
+        span b {
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-light">
+        <div class="container">
+            <span class="navbar-brand h1 m-0">
+                <b class="text-monospace text-dark"><span class=" nameborder">Port</span>scher</b>
+            </span>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <form class="mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-monospace">Desafio JavaScript</h3>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="form-group">
+                                <span>Nome</span>
+                                <input type="text" class="form-control" id="nomeInput" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col">
+                                <div class="form-group">
+                                <span>Sobrenome</span>
+                                <input type="text" class="form-control" id="sobrenomeInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <span>Data de nascimento</span>
+                        <input type="date" class="form-control" id="birthdayInput" placeholder="dd-mm-yyyy">
+                    </div>
+
+                    <input type="button" onclick="initialize()" value="Cadastrar" class="btn btn-success">
+
+                </div>
+                <div class="col-md-6 invisible" id="result">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            Informações Recebidas
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Nome: <span id="nome"></span></li>
+                            <li class="list-group-item">Sobrenome: <span id="sobrenome"></span></li>
+                            <li class="list-group-item">Data de Nascimento: <span id="birthday"></span></li>
+                            <li class="list-group-item">Idade: <span id="idade"></span></li>
+                            <li class="list-group-item"> <span id="idade-check"></span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+        </form>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</html>
